@@ -1,3 +1,13 @@
+# JS Introduction
+```
+<body>
+  <p id="demo"></p>
+  <script>
+    document.getElementById("demo").innerHTML  = "Okay";
+  </script>
+</body>
+```
+
 # JS EVENT 
 
 * onclick
