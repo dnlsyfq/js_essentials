@@ -61,3 +61,94 @@ var removedFromOurArray = ourArray.pop();
 var myArray = [["John", 23], ["cat", 2]];
 var removedFromMyArray = myArray.pop();
 ```
+
+##.shift()
+remove first element/array, save the first removed element/array into new var 
+
+```
+// Example
+var ourArray = ["Stimpson", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+// removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line.
+var removedFromMyArray = myArray.shift();
+```
+
+##.unshift()
+add element/array to be the first in the array 
+
+```
+// Example
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift(); // ourArray now equals ["J", "cat"]
+ourArray.unshift("Happy"); 
+// ourArray now equals ["Happy", "J", "cat"]
+
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+// Only change code below this line.
+myArray.unshift(["Paul", 35]);
+```
+
+## global scope 
+
+```
+// Declare your variable here
+var myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal = 5; // no var so it become global
+}
+
+// Only change code above this line
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+fun1();
+fun2();
+```
+
+### global and local same name
+local take precedent
+```
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+  var outerWear = "sweater";
+
+  return outerWear;
+}
+
+console.log(myOutfit()); //sweater
+console.log(outerWear); // tshirt 
+```
+
+### print array
+```
+function nextInLine(arr, item) {
+  // Your code here
+  arr.push(item);
+  return arr.shift(); 
+}
+
+var testArr = [1,2,3,4,5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+console.log("After: " + testArr);
+```
