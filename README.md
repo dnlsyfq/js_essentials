@@ -37,3 +37,27 @@ JS Function = () => {
 }
 ```
 
+
+
+### Array
+
+##.push()
+add array , add element to array 
+```
+
+var ourArr = ["Stimpson","J","cat"];
+ourArr.push("happy","joy");
+ourArr.push([1,"SAP"]);
+
+console.log(ourArr);
+```
+
+##.pop()
+remove last element/array , save the removed element/array into new var
+```
+var ourArray = [1,2,3];
+var removedFromOurArray = ourArray.pop(); 
+
+var myArray = [["John", 23], ["cat", 2]];
+var removedFromMyArray = myArray.pop();
+```
