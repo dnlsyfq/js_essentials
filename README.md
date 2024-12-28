@@ -190,3 +190,13 @@ par + 1	    "Bogey"
 par + 2	    "Double Bogey"
 >= par + 3	"Go Home!"
 ```
+
+
+* copy object
+```
+JSON.parse(JSON.stringify(<obj>));
+```
+
+* while
+condition 
+
